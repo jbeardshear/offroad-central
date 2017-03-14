@@ -1,0 +1,16 @@
+#helmets {
+  padding-top: 30px;
+}
+
+#boots {
+  padding-top: 30px;
+}
+
+#logo {
+  padding-left: 30px;
+}
+
+.container-fluid {
+  width: 100%;
+  text-align: center;
+}
