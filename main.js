@@ -2,42 +2,42 @@ var items = [
   {
     brand: 'Leatt',
     model: '2017 GPX 6.5 Helmet',
-    price: '$599'
-    picure: 'leatthelmet.jpg'
+    price: '$599',
+    picture: 'leatthelmet.jpg'
   },
   {
     brand: 'Fox Racing',
     model: 'V3 Helmet - A1 Moth LE',
-    price: '$459'
+    price: '$459',
     picture: 'foxhelmet.jpg'
   },
   {
     brand: 'Troy Lee Designs',
     model: 'SE4 Composite Helmet - Freedom',
-    price: '$450'
+    price: '$450',
     picture: 'tldhelmet.jpg'
   },
   {
     brand: 'Bell',
     model: 'Moto-9 Carbon Flex Helmet - Day in the Dirt',
-    price: '$699'
+    price: '$699',
     picture: 'bellhelmet.jpg'
   },
   {
     brand: '6D Helmets',
     model: 'ATR-1 Helmet - Camo',
-    price: '$550'
+    price: '$550',
     picture: '6Dhelmet.jpg'
   },
   {
     brand: 'Just1',
     model: 'J12 Carbon Helmet - Aster Italy',
-    price: '$320'
+    price: '$320',
     picture: 'just1helmet.jpg'
   }
 ]
 
-function createItem[i] {
+function createItem(item) {
   var $col = document.createElement('div')
   $col.classList.add('col-xs-6')
 
@@ -45,16 +45,16 @@ function createItem[i] {
   $thumbnail.classList.add('thumbnail')
 
   var $picture = document.createElement('img')
-  $picture.setAttribute('src', 'items[i].picture')
+  $picture.setAttribute('src', item.picture)
 
   var $caption = document.createElement('div')
   $caption.classList.add('caption')
 
   var $brand = document.createElement('h2')
-  $brand.textContent = items[i].brand
+  $brand.textContent = item.brand
 
   var $model = document.createElement('p')
-  $model.textContent = items[i].model
+  $model.textContent = item.model
 
   var $button = document.createElement('p')
 
@@ -74,12 +74,13 @@ function createItem[i] {
   return $col
 }
 
-for (i = 0, i < items.length, i++)
-  createItem[i]
-
-function {
-  
+for (i = 0; i < items.length; i++) {
+  var $item = createItem(items[i])
+  var $items = document.querySelector('#items')
+  $items.appendChild($item)
 }
+
+
 
 
 //   <div class="container-fluid">
@@ -148,4 +149,11 @@ function {
 //             </div>
 //           </div>
 //         </div>
-//   </div>
+//   </div>s
+
+// var app = {
+//   cart: {
+//     quantity: 0
+//     items: []
+//   }
+// }
