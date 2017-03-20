@@ -1,7 +1,7 @@
 var items = [
   {
     brand: 'Leatt',
-    model: '2017 GPX 6.5 Helmet',
+    model: 'GPX 6.5 Helmet',
     price: '$599',
     picture: 'leatthelmet.jpg'
   },
@@ -61,7 +61,8 @@ function createItem(item) {
   var $buttonA = document.createElement('a')
   $buttonA.classList.add('btn', 'btn-primary')
   $buttonA.setAttribute('role', 'button')
-  $buttonA.textContent = ('See More')
+  $buttonA.setAttribute('id', 'hideDetails')
+  $buttonA.textContent = ('Show Details')
 
   $col.appendChild($thumbnail)
   $thumbnail.appendChild($picture)
@@ -76,81 +77,19 @@ function createItem(item) {
 
 for (i = 0; i < items.length; i++) {
   var $item = createItem(items[i])
-  var $items = document.querySelector('#items')
+  var $items = document.querySelector('#showItems')
   $items.appendChild($item)
+}
+
+document.getElementById('hideDetails').addEventListener('click', detailView)
+
+function detailView() {
+  document.getElementById('showItems').style.display = 'none'
 }
 
 
 
-
-//   <div class="container-fluid">
-//     <div class="page-header">
-//       <h1 id="logo">Brain Buckets <small>Protect your noggin!</small></h1>
-//     </div>
-//     <div class="row">
-//       <div class="col-xs-6" id="helmets">
-//         <div class="thumbnail">
-//           <img src="leatthelmet.jpg">
-//           <div class="caption">
-//             <h2>Leatt</h2>
-//             <p>GPX 6.5 Helmet</p>
-//             <p><a href="#" class="btn btn-primary" role="button">See More</a></p>
-//           </div>
-//         </div>
-//       </div>
-//         <div class="col-xs-6" id="boots">
-//           <div class="thumbnail">
-//             <img src="foxhelmet.jpg">
-//             <div class="caption">
-//               <h2>Fox Racing</h2>
-//               <p>V3 Helmet - A1 Moth LE</p>
-//               <p><a href="#" class="btn btn-primary" role="button">See More</a></p>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       <div class="col-xs-6" id="jerseys">
-//         <div class="thumbnail">
-//           <img src="tldhelmet.jpg">
-//           <div class="caption">
-//             <h2>Troy Lee Designs</h2>
-//             <p>SE4 Composite Helmet - Freedom</p>
-//             <p><a href="#" class="btn btn-primary" role="button">See More</a></p>
-//           </div>
-//         </div>
-//       </div>
-//         <div class="col-xs-6" id="pants">
-//           <div class="thumbnail">
-//             <img src="bellhelmet.jpg">
-//             <div class="caption">
-//               <h2>Bell</h2>
-//               <p>Moto-9 Carbon Flex Helmet - Day in the Dirt</p>
-//               <p><a href="#" class="btn btn-primary" role="button">See More</a></p>
-//             </div>
-//           </div>
-//         </div>
-//       <div class="col-xs-6" id="goggles">
-//         <div class="thumbnail">
-//           <img src="6dhelmet.jpg">
-//           <div class="caption">
-//             <h2>6D Helmets</h2>
-//             <p>ATR-1 Helmet - Camo</p>
-//             <p><a href="#" class="btn btn-primary" role="button">See More</a></p>
-//           </div>
-//         </div>
-//       </div>
-//         <div class="col-xs-6" id="gloves">
-//           <div class="thumbnail">
-//             <img src="just1helmet.jpg">
-//             <div class="caption">
-//               <h2>Just1</h2>
-//               <p>J12 Carbon Helmet - Aster Italy</p>
-//               <p><a href="#" class="btn btn-primary" role="button">See More</a></p>
-//             </div>
-//           </div>
-//         </div>
-//   </div>s
-
+//
 // var app = {
 //   cart: {
 //     quantity: 0
