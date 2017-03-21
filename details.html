@@ -12,28 +12,30 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <div class="page-header">
       <h1 id="logo">Brain Buckets <small>Protect your noggin!</small></h1>
     </div>
+  </div>
+  <div class="container">
     <div class="row">
-      <div class="col-xs-10" id="detailedView">
-        <div class="jumbotron">
+      <div class="col-md-5">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img class="d-block img-fluid" src="6Dhelmet.jpg" alt="First slide">
+                <img class="d-block img-fluid" src="pictures/tldview1.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="bellhelmet.jpg" alt="Second slide">
+                <img class="d-block img-fluid" src="pictures/tldview2.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="foxhelmet.jpg" alt="Third slide">
+                <img class="d-block img-fluid" src="pictures/tldview3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="pictures/tldview4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="pictures/tldview5.jpg" alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -46,8 +48,23 @@
             </a>
           </div>
         </div>
-      </div>
-    </div>
+     <div class="col-md-4 offset-md-3" id="itemInfo">
+       <h1 id="brandName">Troy Lee Designs</h1>
+       <h2 id="modelName">SE4 Composite Helmet - Freedom</h2>
+       <h2 id="price">$450</h2>
+       <button type="button" class="btn btn-info btn-lg" id="addToCartButton">Add to Cart</button>
+     </div>
    </div>
+   <div class="row">
+     <div class="col-md-12" id="detailsPanel">
+       <div class="panel panel-default">
+         <div class="panel-body">
+         <h1>Description</h1>
+          <p id="descriptionBody">Troy Lee Designs is the place where "The World's Fastest Racers" go when only the best will do.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </body>
 </html>
