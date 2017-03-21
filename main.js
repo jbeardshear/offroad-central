@@ -81,10 +81,13 @@ for (i = 0; i < items.length; i++) {
   $items.appendChild($item)
 }
 
-document.getElementById('hideDetails').addEventListener('click', detailView)
+document.getElementById('showItems').addEventListener('click', detailView)
 
-function detailView() {
-  document.getElementById('showItems').style.display = 'none'
+function detailView(event) {
+  if (event.target.tagName === 'A') {
+    document.querySelector('#showItems').style.display = 'none'
+  }
+
 }
 
 
