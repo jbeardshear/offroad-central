@@ -9,3 +9,48 @@
   width: 100%;
   text-align: center;
 }
+
+#detailedView {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#price {
+  padding-top: 25px;
+  font-weight: bold;
+}
+
+#modelName {
+  padding-top: 5px;
+}
+
+#brandName {
+  font-weight: bold;
+  font-size: 400%;
+}
+
+#modelName {
+  font-size: 250%;
+}
+
+#price {
+  font-size: 350%;
+}
+
+#addToCartButton {
+  float: right;
+  margin-top: 40px;
+}
+
+#detailsPanel {
+  margin-top: 50px;
+}
+
+#itemInfo {
+  text-align: right;
+}
+
+#descriptionBody {
+  font-size: 150%;
+  padding-top: 30px;
+}
