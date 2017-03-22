@@ -4,6 +4,7 @@ var items = [
     brand: 'Leatt',
     model: 'GPX 6.5 Helmet',
     price: '$599',
+    description: 'Place Holder',
     picture: 'pictures/leatthelmet.jpg',
     images: [
       {
@@ -22,6 +23,7 @@ var items = [
     brand: 'Fox Racing',
     model: 'V3 Helmet - A1 Moth LE',
     price: '$459',
+    description: 'Place Holder',
     picture: 'pictures/foxhelmet.jpg',
     images: [
       {
@@ -46,6 +48,7 @@ var items = [
     brand: 'Troy Lee Designs',
     model: 'SE4 Composite Helmet - Freedom',
     price: '$450',
+    description: 'Place Holder',
     picture: 'pictures/tldhelmet.jpg',
     images: [
       {
@@ -70,6 +73,7 @@ var items = [
     brand: 'Bell',
     model: 'Moto-9 Carbon Flex Helmet - Day in the Dirt',
     price: '$699',
+    description: 'Place Holder',
     picture: 'pictures/bellhelmet.jpg',
     images: [
       {
@@ -97,6 +101,7 @@ var items = [
     brand: '6D Helmets',
     model: 'ATR-1 Helmet - Camo',
     price: '$550',
+    description: 'Place Holder',
     picture: 'pictures/6Dhelmet.jpg',
     images: [
       {
@@ -112,6 +117,7 @@ var items = [
     brand: 'Just1',
     model: 'J12 Carbon Helmet - Aster Italy',
     price: '$320',
+    description: 'Place Holder',
     picture: 'pictures/just1helmet.jpg',
     images: [
       {
