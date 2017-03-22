@@ -1,5 +1,6 @@
 var items = [
   {
+    id: 1,
     brand: 'Leatt',
     model: 'GPX 6.5 Helmet',
     price: '$599',
@@ -17,6 +18,7 @@ var items = [
     ]
   },
   {
+    id: 2,
     brand: 'Fox Racing',
     model: 'V3 Helmet - A1 Moth LE',
     price: '$459',
@@ -40,6 +42,7 @@ var items = [
     ]
   },
   {
+    id: 3,
     brand: 'Troy Lee Designs',
     model: 'SE4 Composite Helmet - Freedom',
     price: '$450',
@@ -63,6 +66,7 @@ var items = [
     ]
   },
   {
+    id: 4,
     brand: 'Bell',
     model: 'Moto-9 Carbon Flex Helmet - Day in the Dirt',
     price: '$699',
@@ -89,6 +93,7 @@ var items = [
     ]
   },
   {
+    id: 5,
     brand: '6D Helmets',
     model: 'ATR-1 Helmet - Camo',
     price: '$550',
@@ -103,6 +108,7 @@ var items = [
     ]
   },
   {
+    id: 6,
     brand: 'Just1',
     model: 'J12 Carbon Helmet - Aster Italy',
     price: '$320',
