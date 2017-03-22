@@ -23,6 +23,7 @@ function createItem(item) {
   $buttonA.classList.add('btn', 'btn-primary')
   $buttonA.setAttribute('role', 'button')
   $buttonA.setAttribute('id', 'hideDetails')
+  $buttonA.setAttribute('data-item-id', item.id)
   $buttonA.textContent = ('Show Details')
 
   $col.appendChild($thumbnail)
@@ -46,7 +47,7 @@ document.getElementById('showItems').addEventListener('click', detailView)
 
 function detailView(event) {
   if (event.target.tagName === 'A') {
-    document.querySelector('#showItems').style.display = 'none'
+    console.log(event.target.dataset.itemId)
   }
 
 }
