@@ -37,7 +37,7 @@ function createItem(item) {
   return $col
 }
 
-for (i = 0; i < items.length; i++) {
+for (var i = 0; i < items.length; i++) {
   var $item = createItem(items[i])
   var $items = document.querySelector('#showItems')
   $items.appendChild($item)
@@ -47,11 +47,21 @@ document.getElementById('showItems').addEventListener('click', detailView)
 
 function detailView(event) {
   if (event.target.tagName === 'A') {
-    console.log(event.target.dataset.itemId)
+    var itemId = event.target.dataset.itemId
+    findItem (itemId, items)
+    var currentItem = findItem (itemId, items)
+    console.log(currentItem)
   }
-
 }
 
+function findItem (itemId, items) {
+  for (var i = 0; i < items.length; i++) {
+    var itemNumber = items[i].id.toString ()
+    if (itemId === itemNumber) {
+      return items[i]
+    }
+  }
+}
 
 
 //
