@@ -6,8 +6,12 @@ var items = [
     picture: 'pictures/leatthelmet.jpg',
     images: [
       {
-        link: 'pictures/leattview1.jpg',
-        link: 'pictures/leattview2.jpg',
+        link: 'pictures/leattview1.jpg'
+      },
+      {
+        link: 'pictures/leattview2.jpg'
+      },
+      {
         link: 'pictures/leattview3.jpg'
       }
     ]
@@ -19,10 +23,18 @@ var items = [
     picture: 'pictures/foxhelmet.jpg',
     images: [
       {
-        link: 'pictures/foxview1.jpg',
-        link: 'pictures/foxview2.jpg',
-        link: 'pictures/foxview3.jpg',
-        link: 'pictures/foxview4.jpg',
+        link: 'pictures/foxview1.jpg'
+      },
+      {
+        link: 'pictures/foxview2.jpg'
+      },
+      {
+        link: 'pictures/foxview3.jpg'
+      },
+      {
+        link: 'pictures/foxview4.jpg'
+      },
+      {
         link: 'pictures/foxview5.jpg'
       }
     ]
@@ -34,11 +46,19 @@ var items = [
     picture: 'pictures/tldhelmet.jpg',
     images: [
       {
-        link: 'pictures/tldview1.jpg',
-        link: 'pictures/tldview2.jpg',
-        link: 'pictures/tldview3.jpg',
-        link: 'pictures/tldview4.jpg',
-        link: 'pictures/tldview5.jpg',
+        link: 'pictures/tldview1.jpg'
+      },
+      {
+        link: 'pictures/tldview2.jpg'
+      },
+      {
+        link: 'pictures/tldview3.jpg'
+      },
+      {
+        link: 'pictures/tldview4.jpg'
+      },
+      {
+        link: 'pictures/tldview5.jpg'
       }
     ]
   },
@@ -49,11 +69,21 @@ var items = [
     picture: 'pictures/bellhelmet.jpg',
     images: [
       {
-        link: 'pictures/bellview1.jpg',
-        link: 'pictures/bellview2.jpg',
-        link: 'pictures/bellview3.jpg',
-        link: 'pictures/bellview4.jpg',
-        link: 'pictures/bellview5.jpg',
+        link: 'pictures/bellview1.jpg'
+      },
+      {
+        link: 'pictures/bellview2.jpg'
+      },
+      {
+        link: 'pictures/bellview3.jpg'
+      },
+      {
+        link: 'pictures/bellview4.jpg'
+      },
+      {
+        link: 'pictures/bellview5.jpg'
+      },
+      {
         link: 'pictures/bellview6.jpg'
       }
     ]
@@ -65,7 +95,9 @@ var items = [
     picture: 'pictures/6Dhelmet.jpg',
     images: [
       {
-        link: 'pictures/6dview1.jpg',
+        link: 'pictures/6dview1.jpg'
+      },
+      {
         link: 'pictures/6dview2.jpg'
       }
     ]
@@ -77,8 +109,12 @@ var items = [
     picture: 'pictures/just1helmet.jpg',
     images: [
       {
-        link: 'pictures/just1view1.jpg',
-        link: 'pictures/just1view2.jpg',
+        link: 'pictures/just1view1.jpg'
+      },
+      {
+        link: 'pictures/just1view2.jpg'
+      },
+      {
         link: 'pictures/just1view3.jpg'
       }
     ]
