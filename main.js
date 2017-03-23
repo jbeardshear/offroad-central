@@ -181,6 +181,7 @@ function detailView(event) {
     var currentItem = findItem (itemId, items)
     var $details = createDetail(currentItem)
     var $showDetails = document.getElementById('showDetails')
+    removeChildren($showDetails)
     $showDetails.appendChild($details)
     showView('showDetails')
   }
@@ -209,18 +210,19 @@ function showView (viewId) {
 
 document.getElementById('logo').addEventListener('click', goHome)
 
-function goHome (viewId) {
-  var views = document.getElementsByClassName('view')
-  for (var i = 0; i < views.length; i++){
-     if (viewId === views[i].id) {
-       views[i].classList.add('hidden')
-     }
-     else {
-       views[i].classList.remove('hidden')
-     }
-   }
+function goHome () {
+  var details = document.getElementById('showDetails')
+  var items = document.getElementById('showItems')
+  items.classList.remove('hidden')
+  details.classList.add('hidden')
 }
-//
+
+function removeChildren(element) {
+  element.innerHTML = ""
+}
+
+// document.getElementById('addToCartButton').addEventListener('click', updateCartQuantity)
+
 // var app = {
 //   cart: {
 //     quantity: 0
