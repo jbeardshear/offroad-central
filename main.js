@@ -1,6 +1,6 @@
 function createItem(item) {
   var $col = document.createElement('div')
-  $col.classList.add('col-xs-6')
+  $col.classList.add('col-md-6')
 
   var $thumbnail = document.createElement('div')
   $thumbnail.classList.add('thumbnail')
@@ -207,7 +207,19 @@ function showView (viewId) {
    }
 }
 
+document.getElementById('logo').addEventListener('click', goHome)
 
+function goHome (viewId) {
+  var views = document.getElementsByClassName('view')
+  for (var i = 0; i < views.length; i++){
+     if (viewId === views[i].id) {
+       views[i].classList.add('hidden')
+     }
+     else {
+       views[i].classList.remove('hidden')
+     }
+   }
+}
 //
 // var app = {
 //   cart: {
