@@ -20,8 +20,8 @@ function createItem(item) {
   var $button = document.createElement('p')
 
   var $buttonA = document.createElement('a')
-  $buttonA.classList.add('btn', 'btn-primary')
-  $buttonA.setAttribute('role', 'button')
+  $buttonA.classList.add('btn', 'btn-info')
+  $buttonA.setAttribute('type', 'button')
   $buttonA.setAttribute('id', 'hideDetails')
   $buttonA.setAttribute('data-item-id', item.id)
   $buttonA.textContent = 'Show Details'
@@ -168,6 +168,10 @@ function createItemDescription (itemDescription) {
   return $row
 }
 
+function createCartView (items) {
+  
+}
+
 for (var i = 0; i < items.length; i++) {
   var $item = createItem(items[i])
   var $items = document.querySelector('#showItems')
@@ -214,8 +218,10 @@ document.getElementById('logo').addEventListener('click', goHome)
 function goHome () {
   var details = document.getElementById('showDetails')
   var items = document.getElementById('showItems')
+  var cart = document.getElementById('showCart')
   items.classList.remove('hidden')
   details.classList.add('hidden')
+  cart.classList.add('hidden')
 }
 
 function removeChildren(element) {
@@ -232,4 +238,15 @@ function addToCart (event)  {
     var quantity = document.getElementById('cartQuantity')
     quantity.textContent = cart.items.length
   }
+}
+
+document.getElementById('cartIcon').addEventListener('click', showCart)
+
+function showCart() {
+  var details = document.getElementById('showDetails')
+  var items = document.getElementById('showItems')
+  var cart = document.getElementById('showCart')
+  items.classList.add('hidden')
+  details.classList.add('hidden')
+  cart.classList.remove('hidden')
 }
