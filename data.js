@@ -1,3 +1,7 @@
+var cart = {
+  items: []
+}
+
 var items = [
   {
     id: 1,

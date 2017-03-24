@@ -69,6 +69,7 @@ function createItemInfo (itemInfo) {
   $addToCartButton.setAttribute('type', 'button')
   $addToCartButton.classList.add('btn', 'btn-info', 'btn-lg')
   $addToCartButton.id = 'addToCartButton'
+  $addToCartButton.setAttribute('data-item-id', itemInfo.id)
   $addToCartButton.textContent = 'Add to Cart'
 
   $col.appendChild($brand)
@@ -221,11 +222,14 @@ function removeChildren(element) {
   element.innerHTML = ""
 }
 
-// document.getElementById('addToCartButton').addEventListener('click', updateCartQuantity)
+document.getElementById('showDetails').addEventListener('click', addToCart)
 
-// var app = {
-//   cart: {
-//     quantity: 0
-//     items: []
-//   }
-// }
+function addToCart (event)  {
+  if (event.target.tagName === 'BUTTON') {
+    var itemId = event.target.dataset.itemId
+    var currentItem = findItem (itemId, items)
+    cart.items.push(currentItem)
+    var quantity = document.getElementById('cartQuantity')
+    quantity.textContent = cart.items.length
+  }
+}
