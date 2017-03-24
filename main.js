@@ -228,10 +228,8 @@ function addToCart (event)  {
   if (event.target.tagName === 'BUTTON') {
     var itemId = event.target.dataset.itemId
     var currentItem = findItem (itemId, items)
-    var cart = {
-      items:[]
-    }
-    cart.items.push('currentItem')
-    console.log(cart)
+    cart.items.push(currentItem)
+    var quantity = document.getElementById('cartQuantity')
+    quantity.textContent = cart.items.length
   }
 }
