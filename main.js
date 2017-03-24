@@ -222,18 +222,16 @@ function removeChildren(element) {
   element.innerHTML = ""
 }
 
-document.getElementById('showDetails').addEventListener('click', updateCartQuantity)
+document.getElementById('showDetails').addEventListener('click', addToCart)
 
-function updateCartQuantity (event)  {
-  if (event.target.tagname === 'button') {
+function addToCart (event)  {
+  if (event.target.tagName === 'BUTTON') {
+    var itemId = event.target.dataset.itemId
     var currentItem = findItem (itemId, items)
-    console.log(currentItem)
+    var cart = {
+      items:[]
+    }
+    cart.items.push('currentItem')
+    console.log(cart)
   }
 }
-
-// var app = {
-//   cart: {
-//     quantity: 0
-//     items: []
-//   }
-// }
